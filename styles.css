@@ -57,10 +57,6 @@ p{
   vertical-align: top;
 }
 
-.icons img {
-
-}
-
 /*********** Storage Meter Box *************/
 
 .storage_bubble {
@@ -86,7 +82,7 @@ p{
   color: hsl(229, 7%, 55%);
 }
 
-.storage_meter{
+.storage_box{
   background-color: hsl(228, 56%, 26%);
   width: 500px;
   height: 170px;
@@ -94,7 +90,7 @@ p{
   flex: 2;
 }
 
-.storage_meter p {
+.storage_box p {
   display: inline-block;
   margin-left: 20px;
 }
@@ -133,4 +129,78 @@ p{
   left: 340px;
   top: 1.5px;
   z-index: 2;
+}
+
+@media(max-width: 450px) {
+  body {
+    background-image: url("images/bg-mobile.png");
+    background-repeat: no-repeat;
+    width: auto;
+  }
+
+  .background {
+    background:none;
+  }
+
+  .main_elements {
+    display: block;
+    margin: 5%;
+    margin-top: 20%;
+  }
+
+  #header {
+    width: 300px;
+    margin-right: 0;
+    margin-bottom: 5%;
+  }
+
+  .storage_box {
+    width: 330px;
+    margin: 0;
+    text-align: center;
+  }
+
+  .storage_box p {
+    display: inline-block;
+    margin-left: 0px;
+    margin-top: 40px;
+  }
+
+  .meter {
+    width: 250px;
+    margin-left: 10%;
+    margin-top: 15px;
+    display: block;
+    position: fixed;
+  }
+
+  .zero {
+    position: absolute;
+    top: 360px;
+    left: 65px;
+  }
+
+  .thousand {
+    position: absolute;
+    top: 360px;
+    right: 55px;
+
+  }
+
+  .meter_fill {
+    width: 200px;
+  }
+
+  .meter_circle {
+    left: 190px;
+  }
+
+  .storage_bubble {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    position: absolute;
+    left: 110px;
+    top: 440px;
+  }
 }
