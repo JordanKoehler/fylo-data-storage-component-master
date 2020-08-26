@@ -134,7 +134,7 @@ p{
 @media(max-width: 450px) {
   body {
     background-image: url("images/bg-mobile.png");
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     width: auto;
   }
 
